@@ -28,6 +28,6 @@ describe('partial mocking', () => {
   test('unmockedFunction should log into console', () => {
     console.log = jest.fn();
     unmockedFunction();
-    expect(console.log).toHaveBeenCalled();
+    expect(console.log).toHaveBeenCalledWith('I am not mocked');
   });
 });
